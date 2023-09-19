@@ -1,0 +1,49 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "video_to_frames"
+version = "1.0.0"
+description = "Break a video to it's frames."
+readme = "README.md"
+authors = [{ name = "Alireza Nematollahi", email = "alireza.tehran2020@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["breaker", "videoToFrames", "videoBreaker"]
+dependencies = [
+    "opencv-python",
+    'tomli; python_version < "3.11"',
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/alirezanmt/video_to_frames"
+
+[project.scripts]
+videoToFrames = "videoToFrames.__main__:main"
+
+[tool.bumpver]
+current_version = "1.0.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = false
+tag = false
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"', 'version = "{version}"'
+]
+
+"src/videoToFrames/config.toml" = ['version = "{version}"']
+

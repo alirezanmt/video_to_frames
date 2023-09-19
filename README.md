@@ -1,6 +1,6 @@
 # Video To Frames
 
-videoToFrames breaks a video to it's frames and saves them in a folder.
+videoToFrames breaks a video to its frames and saves them in a folder.
 
 ## Installation
 

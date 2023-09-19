@@ -1,0 +1,2 @@
+[console_scripts]
+videoToFrames = videoToFrames.__main__:main

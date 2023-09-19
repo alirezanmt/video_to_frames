@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/videoToFrames/__init__.py
+src/videoToFrames/__main__.py
+src/videoToFrames/breaker.py
+src/videoToFrames/config.toml
+src/video_to_frames.egg-info/PKG-INFO
+src/video_to_frames.egg-info/SOURCES.txt
+src/video_to_frames.egg-info/dependency_links.txt
+src/video_to_frames.egg-info/entry_points.txt
+src/video_to_frames.egg-info/requires.txt
+src/video_to_frames.egg-info/top_level.txt

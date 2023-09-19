@@ -6,7 +6,7 @@ videoToFrames breaks a video to it's frames and save them in a folder.
 
 You can install the videoToFrames from [PyPI](https://pypi.org/project/video_to_frames/):
 
-        python -m pip install video-to-frames
+        python -m pip install break-video-to-frames
 
 ## How to use
 
